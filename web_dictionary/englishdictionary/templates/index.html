@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      body {
+        background: linear-gradient(45deg, #09065c, #000);
+        font-family: "Fira Sans", sans-serif;
+        color: #fff;
+      }
+
+      .search {
+        width: 100%;
+        position: relative;
+        display: flex;
+      }
+
+      .searchTerm {
+        width: 100%;
+        border: 3px solid #00b4cc;
+        padding: 5px;
+        height: 30px;
+        border-radius: 18px;
+        outline: none;
+        color: #000;
+        margin-bottom: 10px;
+        font-weight: bold;
+      }
+
+      .searchTerm:focus {
+        color: #000;
+      }
+
+      .searchTerm:hover {
+        border: 5px solid #fdca40;
+      }
+
+      .searchButton:hover {
+        background: #fdca40;
+        color: #02475e;
+        border: none;
+      }
+
+      .searchButton {
+        width: 40px;
+        height: 36px;
+        border: 1px solid #00b4cc;
+        background: #00b4cc;
+        color: #fff;
+        border-radius: 20px;
+        cursor: pointer;
+        font-size: 20px;
+      }
+
+      /*Resize the wrap to see the search bar change!*/
+      .wrap {
+        width: 70%;
+        position: absolute;
+        top: 33%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    </style>
+  </head>
+  <title>DICTIONARY</title>
+  <body>
+    <div class="wrap">
+      <div class="search">
+        <form action="word">
+          <input
+            type="text"
+            name="search"
+            class="searchTerm"
+            placeholder="Type a word to search"
+          />
+          <button type="submit" class="searchButton">
+            <i class="fa fa-search"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
